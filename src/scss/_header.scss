@@ -1,0 +1,40 @@
+.header__title {
+  margin: 0 auto;
+  padding-top: 78px;
+  max-width: 213px;
+
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  letter-spacing: 0;
+  color: #dc56c5;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+    max-width: 354px;
+    font-size: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-weight: 900;
+    font-size: 50px;
+    max-width: 590px;
+  }
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.logo__link {
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.75;
+  }
+}

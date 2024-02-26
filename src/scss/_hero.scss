@@ -1,0 +1,81 @@
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+  max-width: 570px;
+  margin: 0 auto;
+
+  @media screen and(min-width: 768px) {
+    padding-top: 27px;
+  }
+  @media screen and(min-width: 1280px) {
+    padding-top: 52px;
+  }
+  @media screen and(max-width: 767.98px) {
+    flex-direction: column;
+  }
+
+}
+
+.input-container {
+  position: relative;
+
+  @media screen and(max-width: 767.98px) {
+    margin-bottom: 25px;
+  }
+}
+
+.input-search, 
+.select-country {
+  width: 270px;
+  height: 40px;
+  padding-left: 30px;
+
+  background: rgba(147, 147, 147, 0.2);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  border: none;
+  outline-style: none;
+  border-radius: 20px;
+
+  font-size: 16px;
+  color: #939393;
+}
+
+.input-search-label {
+  position: absolute;
+  top: 35%;
+  left: 85%;
+
+  color: #939393;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.select-country {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.select-wrap {
+  position: relative;
+}
+
+.select-wrap::after {
+  content: "";
+  position: absolute;
+  contain: content;
+  display: block;
+  top: 35%;
+  left: 87%;
+  width: 12px;
+  height: 12px;
+  background-image: url('../images/icons-polygon.png');
+  background-size: contain;
+  pointer-events: none;
+}
