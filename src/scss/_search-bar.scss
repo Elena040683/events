@@ -27,7 +27,7 @@
   }
 }
 
-.input-search, 
+.input-search,
 .select-country {
   width: 270px;
   height: 40px;
@@ -56,14 +56,14 @@
   cursor: pointer;
 }
 
-.select-country {
+.select-wrap {
+  position: relative;
+}
+
+.select-wrap > select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-}
-
-.select-wrap {
-  position: relative;
 }
 
 .select-wrap::after {
@@ -79,3 +79,23 @@
   background-size: contain;
   pointer-events: none;
 }
+
+option {
+  background: rgba(147, 147, 147, 0.2);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  border: none;
+  outline: none;
+
+  font-size: 12px;
+  color: #939393;
+}
+
+option:hover {
+  color: #dc56c5;
+  background: #dc56c5;
+  cursor: pointer;
+}
+
+

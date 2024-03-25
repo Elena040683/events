@@ -1,0 +1,15 @@
+{{#each this}}
+  <li class='event__item scale-in-center'>
+    <div class="event-img-wrap">
+      <img class='event__img swirl-in-fwd' src="{{this.images.[3].url}}" alt="{{this.name}}">
+    </div>
+    <div class='event__decorative-frame swirl-in-fwd'></div>
+    <h2 class='event__title'>{{this.name}}</h2>
+    <p class='event__date'>{{this.dates.start.localDate}}</p>
+    {{#if this._embedded.venues.0.name}}
+      <p class='event__location'>{{this._embedded.venues.[0].name}}</p>
+      {{else}}
+      <p class='event__location'>{{this.dates.timezone}}</p>
+    {{/if}}
+  </li>
+{{/each}}
